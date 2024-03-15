@@ -5,7 +5,7 @@ async function main() {
   
     console.log("Account balance:", (await deployer.getBalance()).toString());
   
-    const Data = await ethers.getContractFactory("PaymentRouter");
+    const Data = await ethers.getContractFactory("paymentRouter");
     const data = await Data.connect(deployer).deploy();
     await data.deployed();
     console.log("PaymentRouter Deployed~!")
@@ -19,4 +19,4 @@ async function main() {
       console.error(error);
       process.exit(1);
     });
-    //npx hardhat run scripts/deploy.js --network goerli
+    //npx hardhat run scripts/deploy.js --network mumbai

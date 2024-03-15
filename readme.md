@@ -37,3 +37,11 @@ To reord the payment via evm by `event` log .
         - amountRouter
         - isPrepaird
         - time
+
+#### Others : 
+
+- Due the terrible fauct of `Goerli` , now using `tbsc` as testnet
+
+```
+0x318b6ab1cbC3258a083c77a6FBC9a1215FfdDeA4
+```
