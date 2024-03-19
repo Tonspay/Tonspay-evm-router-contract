@@ -5,11 +5,11 @@ async function main() {
   
     console.log("Account balance:", (await deployer.getBalance()).toString());
   
-    const Data = await ethers.getContractFactory("paymentRouter");
-    const data = await Data.connect(deployer).deploy();
-    await data.deployed();
-    console.log("PaymentRouter Deployed~!")
-    console.log("PaymentRouter Contract address:", data.address);
+    const data = await ethers.getContractAt("paymentRouter","0x4d978743B36B7F8A72B8C2CD77DD24B33D9E2D9b");
+
+    await data.transfer("0x511416Cf874099A43ed8361B156b6fc35cf95B55","10000000000000000",'daaaf6068dc8058fdc1ce0b439f5da92',10,{
+        value: "10000000000000000"
+    })
 
   } 
   
@@ -19,4 +19,4 @@ async function main() {
       console.error(error);
       process.exit(1);
     });
-    //npx hardhat run scripts/deploy.js --network bsc
+    //npx hardhat run scripts/deployTest.js --network bsc
