@@ -5,10 +5,10 @@ async function main() {
   
     console.log("Account balance:", (await deployer.getBalance()).toString());
   
-    const data = await ethers.getContractAt("paymentRouter","0x4d978743B36B7F8A72B8C2CD77DD24B33D9E2D9b");
+    const data = await ethers.getContractAt("paymentRouter","0x263aD853F020075De3FC1D3e24e9d8E88BcD9182");
 
-    await data.transfer("0x511416Cf874099A43ed8361B156b6fc35cf95B55","10000000000000000",'daaaf6068dc8058fdc1ce0b439f5da92',10,{
-        value: "10000000000000000"
+    await data.transfer("0x511416Cf874099A43ed8361B156b6fc35cf95B55","100000000000000",'daaaf6068dc8058fdc1ce0b439f5da92',{
+        value: "200000000000000"
     })
 
   } 
