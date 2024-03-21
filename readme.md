@@ -45,3 +45,7 @@ To reord the payment via evm by `event` log .
 ```
 0x263aD853F020075De3FC1D3e24e9d8E88BcD9182
 ```
+- *Arb* mainnet
+```
+0x318b6ab1cbC3258a083c77a6FBC9a1215FfdDeA4
+```
