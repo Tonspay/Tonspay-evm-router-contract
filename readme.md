@@ -49,3 +49,7 @@ To reord the payment via evm by `event` log .
 ```
 0x318b6ab1cbC3258a083c77a6FBC9a1215FfdDeA4
 ```
+- *Bsc* mainnet
+```
+0xab03f37611728B23A6e9Bf89E2C5a5dfAA5b7C4c
+```
