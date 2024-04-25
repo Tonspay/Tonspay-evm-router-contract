@@ -19,4 +19,9 @@ async function main() {
       console.error(error);
       process.exit(1);
     });
-    //npx hardhat run scripts/deploy.js --network bsc
+    //npx hardhat run scripts/deploy.js --network scroll
+    
+
+    //npx hardhat verify --network <network> <contract address> <constructor parameters>
+
+    //npx hardhat verify --network scroll 0x318b6ab1cbC3258a083c77a6FBC9a1215FfdDeA4 
